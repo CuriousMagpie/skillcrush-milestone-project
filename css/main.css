@@ -87,6 +87,267 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+ font-size: 16px;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ font-size: 1em;
+ text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  /* color: #e2e3ed; */
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Raleway', serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Raleway', serif;
+  font-size: 1.25em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.285em;
+}
+
+img {
+	width: 100%;
+}
+
+address {
+  font-style:normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 75px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #1f202b;
+  color: #ffffff;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  font-size: 1.125em;
+  text-transform: lowercase;
+}
+
+header .header-divider-one {
+  width: 100%;
+  height: 1px;
+  background: #1f202b;
+}
+
+header .header-divider-two {
+  width: 100%;
+  height: 1px;
+  background: #1f202b;
+}
+
+header p {
+  font-size: 1.125em;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header nav li a {
+  text-decoration: none;
+}
+
+footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+footer h2 {
+  text-transform:lowercase;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+footer a {
+  color: #fa0075;
+  text-decoration: none;
+}
+
+footer .content-wrapper {
+  width: 80%;
+  margin: 25px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 3.0em;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* ----- Hero Area ----- */
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-image: url("../img/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 425px;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-transform: lowercase;
+  padding-top: 100px;
+}
+
+.hero-area span {
+  color: #fa0075;
+}
+
+/* ----- Features ----- */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+  margin: 0px;
+}
+
+.features h2 {
+  text-transform:lowercase;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.features h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.features article {
+  margin-bottom: 25px;
+}
+
+.features p {
+  line-height: 1.5em;
+}
+
+.bi-icons {
+  text-align: center;
+}
+
+.features i {
+	font-size: 3.0em;
+  margin-bottom: 40px;
+}
+
+.features ul li {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
+/* ----- Aside ----- */
+
+aside {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.aside .content-wrapper {
+  margin: 0px;
+}
+
+.aside h2 {
+  text-transform:lowercase;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +521,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
