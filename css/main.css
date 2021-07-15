@@ -148,12 +148,13 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #1f202b;
+  background: #204a74;
   color: #ffffff;
 }
 
 header {
   padding: 15px 0;
+  background: #204a74;
 }
 
 header .content-wrapper {
@@ -169,13 +170,13 @@ header .content-wrapper {
 header .header-divider-one {
   width: 100%;
   height: 1px;
-  background: #1f202b;
+  background: #204a74;
 }
 
 header .header-divider-two {
   width: 100%;
   height: 1px;
-  background: #1f202b;
+  background: #204a74;
 }
 
 header p {
@@ -198,6 +199,12 @@ header nav ul {
 
 header nav li a {
   text-decoration: none;
+  color: #ffffff;
+}
+
+header nav li a:hover {
+  text-decoration: none;
+  color: #c93781;
 }
 
 footer {
@@ -222,13 +229,13 @@ footer p {
 }
 
 footer a {
-  color: #fa0075;
+  color: #c93781;
   text-decoration: none;
 }
 
 footer .content-wrapper {
-  width: 80%;
-  margin: 25px 0;
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .contact {
@@ -251,8 +258,16 @@ footer .social-icons p i {
   font-size: 3.0em;
 }
 
+footer .connect {
+  font-weight: bolder;
+  font-size: 1.125em;
+}
+
 footer .copyright {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -263,7 +278,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../img/hero-background.png");
+  background-image: url("../img/hydrangea-hero-background.png");
   background-size: cover;
   background-position: center;
   min-height: 425px;
@@ -279,8 +294,17 @@ footer .copyright {
   padding-top: 100px;
 }
 
+.hero-area p {
+  font-size: 2.25em;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+
 .hero-area span {
-  color: #fa0075;
+  color: #c93781;
 }
 
 /* ----- Features ----- */
@@ -303,7 +327,7 @@ footer .copyright {
 }
 
 .features h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -313,11 +337,19 @@ footer .copyright {
 
 .features p {
   line-height: 1.5em;
-}
-
-.bi-icons {
   text-align: center;
 }
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+/* .bi-icons {
+  text-align: center;
+} */
 
 .features i {
 	font-size: 3.0em;
@@ -335,6 +367,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #cccccc;
 }
 
 .aside .content-wrapper {
@@ -344,6 +377,10 @@ aside {
 .aside h2 {
   text-transform:lowercase;
   font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+aside p {
   text-align: center;
 }
 
@@ -439,6 +476,205 @@ aside {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for tablets */
+
+
+/* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+/* ----- Homepage and Header/Footer ----- */
+
+  /* Header */
+
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav {
+    width: 28%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider-one {
+    display: none;
+  }
+
+  .header-divider-two {
+    display: none;
+  }
+
+
+  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  .hero-area p {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    /* display: flex; */
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+
+  /* Features */
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 50px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+  }
+
+  footer .social-icons p i {
+    padding: 0 10px;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+}
+
+
+/* -----DESKTOP STYLES HERE ----- */
+
+@media only screen and (min-width: 1200px) {
+
+  header {
+    padding: 15px 0;
+    }
+
+  header nav {
+    width: 20%;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+
+   /* Hero */
+  .hero-area h1 {
+    width: 60%;
+    font-size: 3.75em;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-between;
+  }
+
+  /* Features */
+  .features p {
+    text-align: left;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  }
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
