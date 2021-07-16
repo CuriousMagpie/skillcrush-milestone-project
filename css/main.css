@@ -110,6 +110,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+    font-size: 2.25em;
+}
+
 h2 {
   font-family: 'Raleway', serif;
   font-size: 1.875em;
@@ -125,6 +129,10 @@ h4 {
 p {
   font-size: 1em;
   line-height: 1.285em;
+}
+
+a {
+  color: #c93781;
 }
 
 img {
@@ -177,6 +185,10 @@ header .header-divider-two {
   width: 100%;
   height: 1px;
   background: #204a74;
+}
+
+header .what-i-do {
+  text-align: center;
 }
 
 header p {
@@ -285,22 +297,12 @@ footer .copyright {
 }
 
 .hero-area h1 {
-  font-size: 2.25em;
   font-weight: bolder;
   font-family: "Raleway", sans-serif;
   line-height: 1.2em;
   color: #ffffff;
   text-transform: lowercase;
   padding-top: 100px;
-}
-
-.hero-area p {
-  font-size: 2.25em;
-  font-weight: bolder;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.2em;
-  color: #ffffff;
-  text-transform: lowercase;
 }
 
 .hero-area span {
@@ -314,6 +316,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #ebf2fa;
 }
 
 .features .content-wrapper {
@@ -337,6 +340,9 @@ footer .copyright {
 
 .features p {
   line-height: 1.5em;
+}
+
+.features .bi-icons {
   text-align: center;
 }
 
@@ -347,9 +353,6 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-/* .bi-icons {
-  text-align: center;
-} */
 
 .features i {
 	font-size: 3.0em;
@@ -367,20 +370,18 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #cccccc;
+  background: #eeeeee;
+  border-top: 1px #3781c9 solid;
 }
 
 .aside .content-wrapper {
   margin: 0px;
+  width: 75%;
 }
 
 .aside h2 {
   text-transform:lowercase;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
-}
-
-aside p {
   text-align: center;
 }
 
@@ -499,30 +500,6 @@ aside p {
 
 /* ----- Homepage and Header/Footer ----- */
 
-  /* Header */
-
-  header {
-    justify-content: space-around;
-    padding: 33px 0;
-  }
-
-  header .content-wrapper {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  header nav {
-    width: 28%;
-  }
-
-  header nav ul {
-    justify-content: space-between;
-  }
-
-  .header-divider-one {
-    display: none;
-  }
-
   .header-divider-two {
     display: none;
   }
@@ -563,7 +540,7 @@ aside p {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
 
   .features .features-item-description {
@@ -628,6 +605,33 @@ aside p {
 
   header nav {
     width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav {
+    width: 20%;
+    flex-flow: column wrap;
+    text-align: center;
+    display: inline-block;
+    }
+
+  header nav ul {
+    justify-content: space-between;
+    }
+
+ .header-divider-one {
+    display: none;
+  }
+
+  .header-divider-two {
+    display: none;
   }
 
   .content-wrapper {
@@ -666,7 +670,8 @@ aside p {
   }
 
   .features article {
-    flex-basis: 33%;
+    flex-basis: 45%;
+    padding: 0 20px 20px 25px
   }
 
   }
