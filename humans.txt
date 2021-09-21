@@ -3,11 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Natalie Luhrs -- Web Developer -- @eilatan
 
 # THANKS
 
-    <name>
+    to Skillcrush, for teaching me the skills I needed to make this website. <3
+    to Sora Sagano for taking the bautiful header image and making it available for free https://unsplash.com/@sorasagano and https://unsplash.com/s/photos/blue-flower
+    to Annalee for listening
 
 # TECHNOLOGY COLOPHON
 
